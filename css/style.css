@@ -1,0 +1,315 @@
+.square {
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.mbt-init, .mbt-info, .mbt-contacto {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 25px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: black;
+  font-family: cursive;
+  transition: all 0.3s;
+}
+.mbt-init:hover, .mbt-info:hover, .mbt-contacto:hover {
+  opacity: 0.8;
+}
+
+.mbt-contacto {
+  background-color: darkblue;
+}
+
+.mbt-info {
+  background-color: gray;
+}
+
+.link-github {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 5px;
+  color: lemonchiffon;
+  text-decoration: none;
+  background-color: #1d1d1d;
+}
+
+.link-twitter {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 5px;
+  color: lemonchiffon;
+  text-decoration: none;
+  background-color: #81d4fa;
+}
+
+.link-facebook {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 5px;
+  color: lemonchiffon;
+  text-decoration: none;
+  background-color: #2d30c9;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: url("../assets/fondodeinicio.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.body p {
+  line-height: 2;
+  color: rgb(8, 11, 14);
+}
+.body header {
+  justify-content: space-between;
+}
+.body header .nav-cuerpo {
+  width: 100%;
+  justify-content: end;
+}
+.body header .content__title {
+  font-size: 20px;
+  /*background-color: aqua;*/
+  color: crimson;
+  font-family: cursive;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+.body nav ul li {
+  display: inline-flex;
+  line-height-step: 50px;
+  margin: 0 5px;
+  text-align: center;
+}
+.body main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body main section .container {
+  background-color: antiquewhite;
+}
+.body main section .grid {
+  background-color: rgb(10, 168, 173);
+  max-width: 390px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.body main section .grid__item {
+  font-size: 50px;
+  border: 2px solid blue;
+  color: rgb(10, 1, 9);
+  justify-items: start;
+  font-family: fantasy;
+}
+.body main section .pinture p {
+  color: brown;
+}
+.body main .caja {
+  background-color: rgb(117, 45, 117);
+  width: 20rem;
+  height: 20rem;
+  padding: 3px;
+  border: 10px inset rgb(219, 73, 54);
+}
+
+.fondo {
+  background-image: url(../assets/fondodesesion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+}
+header .nav-cuerpo {
+  justify-content: end;
+  width: 100%;
+}
+
+nav a {
+  color: aliceblue;
+}
+nav ul .negrita {
+  font-weight: bold;
+}
+nav li {
+  display: inline-flex;
+  width: 150px;
+}
+
+main p {
+  font-size: 18px;
+}
+main .inicio {
+  color: red;
+  background-size: cover;
+  background-image: url(../assets/imagenfondo.jpeg);
+  font-size: 20px;
+}
+main .inicio li {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+main .interlineado {
+  line-height: 2;
+}
+main .orden {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  transform: none;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.estilo :hover {
+  transform: translatex(50px);
+  background-color: aliceblue;
+}
+
+.imagen {
+  background-image: url(../assets/fondodesesion2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.delineado :hover {
+  transform: translatex(50px);
+  background-color: brown;
+}
+
+nav ul {
+  display: flex;
+  width: 550px;
+  justify-content: flex-end;
+}
+
+.action :hover {
+  transform: translatex(50px);
+  background-color: aliceblue;
+}
+
+.gusto {
+  background-image: url(../assets/gustos1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.gusto .cards__tarjeta {
+  max-width: 380px;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  margin: 100px;
+  margin-left: 280px;
+}
+.gusto .cards__tarjeta li {
+  color: oldlace;
+}
+.gusto .cards__tarjeta h2 {
+  color: red;
+}
+.gusto .tarjetas {
+  background-color: rgb(230, 166, 166);
+  width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  /*flex-wrap: initial;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.gusto .tarjetas small {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 10px;
+}
+.gusto .card__title {
+  color: purple;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.gusto .card__header img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.gusto .card__descrepcion {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.gusto a {
+  color: brown;
+}
+
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  h3 {
+    display: none;
+  }
+}
+.body main section {
+  display: flex;
+  margin: 10px;
+  flex-direction: column-reverse;
+}
+.body main section .ajuste-transform {
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.cards__tarjeta {
+  margin: 80px;
+  margin-right: 120px;
+}
+
+@media (max-width: 320px) {
+  ul {
+    display: none;
+  }
+  .orden {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: crimson;
+  }
+  .body {
+    grid-template-columns: 1fr;
+    margin-left: 150px;
+  }
+}
+
+/*# sourceMappingURL=style.css..map */

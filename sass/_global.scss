@@ -1,0 +1,55 @@
+@mixin estilos ($alineacion, $fondo) {
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: $alineacion;
+    background-color: $fondo;
+}
+
+.square {
+    @include estilos(space-between, yellow);
+}
+
+.mbt-init {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    font-size: $smallsize;
+    color: black;
+    font-family: cursive;
+    transition: $transicion;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.mbt-contacto {
+    @extend .mbt-init;
+    background-color: darkblue;
+
+}
+
+.mbt-info {
+    @extend .mbt-init;
+    background-color: gray;
+}
+
+$redesSociales: (
+    github: #1d1d1d,
+    twitter: #81d4fa,
+    facebook:#2d30c9,
+);
+
+@each $nombre, $color in $redesSociales {
+    .link-#{$nombre} {
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 5px;
+        color: lemonchiffon;
+        text-decoration: none;
+        background-color: $color;
+    }
+}
