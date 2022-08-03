@@ -118,7 +118,7 @@
   justify-items: start;
   font-family: fantasy;
 }
-.body main section .grid .caja {
+.body main .caja {
   background-color: rgb(117, 45, 117);
   width: 20rem;
   height: 20rem;
@@ -153,6 +153,9 @@ nav li {
   width: 150px;
 }
 
+main {
+  margin: 20px;
+}
 main p {
   font-size: 18px;
 }
@@ -171,8 +174,7 @@ main .interlineado {
   line-height: 2;
 }
 main .orden {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
+  display: flex;
   transform: none;
   color: rgb(0, 0, 0);
   border-radius: 10px;
@@ -215,14 +217,12 @@ nav ul {
 
 .cards__tarjeta {
   max-width: 380px;
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   border-radius: 20px;
-  margin: 100px;
-  margin-left: 280px;
 }
 .cards__tarjeta li {
   color: oldlace;
@@ -278,6 +278,10 @@ a {
     font-size: 20px;
   }
 }
+.orden {
+  display: flex;
+}
+
 @media (max-width: 768px) {
   h3 {
     display: none;
@@ -285,7 +289,6 @@ a {
 }
 .body main section {
   display: flex;
-  margin: 10px;
   flex-direction: column-reverse;
 }
 .body main section .ajuste-transform {
@@ -300,18 +303,7 @@ h1 {
   width: 100%;
 }
 
-.cards__tarjeta {
-  margin: 80px;
-  margin-right: 120px;
-}
-
 @media (max-width: 320px) {
-  ul {
-    display: none;
-  }
-  h4 {
-    display: none;
-  }
   .body {
     grid-template-columns: 1fr;
   }

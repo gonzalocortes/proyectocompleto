@@ -4,6 +4,10 @@
     }
 }
 
+.orden {
+    display: flex;
+}
+
 @media (max-width: 768px) {
 
     h3 {
@@ -14,7 +18,6 @@
 
 .body main section {
     display: flex;
-    margin: 10px;
     flex-direction: column-reverse;
 
     .ajuste-transform {
@@ -30,22 +33,14 @@ h1 {
     width: 100%;
 }
 
-.cards__tarjeta {
-    margin: 80px;
-    margin-right: 120px;
-}
+
 
 
 
 
 @media (max-width: 320px) {
-    ul {
-        display: none;
-    }
 
-  h4 {
-    display: none;
-  }
+
 
 
     .body {
