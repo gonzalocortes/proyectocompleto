@@ -83,178 +83,178 @@
             }
         }
     }
+}
 
-    .fondo {
-        background-image: url(../assets/fondodesesion.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
+.fondo {
+    background-image: url(../assets/fondodesesion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
-    header {
-        font-family: Arial, Helvetica, sans-serif;
-        justify-content: space-between;
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
 
-        .nav-cuerpo {
-            justify-content: end;
-            width: 100%;
-        }
-
-    }
-
-    nav {
-        a {
-            color: $shadowtext;
-        }
-
-        ul {
-
-            .negrita {
-                font-weight: bold;
-            }
-        }
-
-        li {
-            display: inline-flex;
-            width: 150px;
-        }
-    }
-
-    main {
-        p {
-            font-size: 18px;
-        }
-
-        .inicio {
-            color: red;
-            background-size: cover;
-            background-image: url(../assets/imagenfondo.jpeg);
-            font-size: $smallsize;
-
-            li {
-                font-style: italic;
-                font-weight: bold;
-                text-align: center;
-            }
-        }
-
-        .interlineado {
-            line-height: 2;
-        }
-
-        .orden {
-            display: grid;
-            grid-template-columns: repeat(3, 400px);
-            transform: none;
-            color: rgb(0, 0, 0);
-            border-radius: 10px;
-
-        }
-    }
-
-
-    .estilo :hover {
-        transform: translatex(50px);
-        background-color: $shadowtext;
-    }
-
-
-    .imagen {
-        background-image: url(../assets/fondodesesion2.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    .delineado :hover {
-        transform: translatex(50px);
-        background-color: brown;
-    }
-
-
-    nav {
-        ul {
-            display: flex;
-            width: 550px;
-            justify-content: flex-end;
-        }
-    }
-
-
-
-    .action :hover {
-        transform: translatex(50px);
-        background-color: $shadowtext;
-    }
-
-    .gusto {
-        background-image: url(../assets/gustos1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    .cards__tarjeta {
-        max-width: 380px;
-        display: grid;
-        grid-template-columns: repeat(2, 300px);
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        border-radius: $smallsize;
-        margin: 100px;
-        margin-left: 280px;
-
-        li {
-            color: oldlace;
-        }
-
-        h2 {
-            color: red;
-        }
-    }
-
-
-
-    .tarjetas {
-        background-color: rgb(230, 166, 166);
-        width: 280px;
-        border-radius: 20px;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        /*flex-wrap: initial;*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-    .tarjetas small {
-        background-color: rgba(255, 255, 255, 0.5);
-        color: rgb(0, 0, 0);
-        padding: 8px;
-        position: absolute;
-        right: 0;
-        border-bottom-left-radius: 10px;
-    }
-
-    .card__title {
-        color: purple;
-        font-size: 25px;
-        margin-bottom: $smallsize;
-    }
-
-    .card__header img {
+    .nav-cuerpo {
+        justify-content: end;
         width: 100%;
-        border-radius: 10px;
-        margin-bottom: $smallsize;
     }
 
-    .card__descrepcion {
-        margin-bottom: 30px;
-        font-size: $smallsize;
-    }
+}
 
+nav {
     a {
-        color: brown;
+        color: $shadowtext;
     }
+
+    ul {
+
+        .negrita {
+            font-weight: bold;
+        }
+    }
+
+    li {
+        display: inline-flex;
+        width: 150px;
+    }
+}
+
+main {
+    p {
+        font-size: 18px;
+    }
+
+    .inicio {
+        color: red;
+        background-size: cover;
+        background-image: url(../assets/imagenfondo.jpeg);
+        font-size: $smallsize;
+
+        li {
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    .interlineado {
+        line-height: 2;
+    }
+
+    .orden {
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        transform: none;
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+
+    }
+}
+
+
+.estilo :hover {
+    transform: translatex(50px);
+    background-color: $shadowtext;
+}
+
+
+.imagen {
+    background-image: url(../assets/fondodesesion2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.delineado :hover {
+    transform: translatex(50px);
+    background-color: brown;
+}
+
+
+nav {
+    ul {
+        display: flex;
+        width: 550px;
+        justify-content: flex-end;
+    }
+}
+
+
+
+.action :hover {
+    transform: translatex(50px);
+    background-color: $shadowtext;
+}
+
+.gusto {
+    background-image: url(../assets/gustos1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cards__tarjeta {
+    max-width: 380px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: $smallsize;
+    margin: 100px;
+    margin-left: 280px;
+
+    li {
+        color: oldlace;
+    }
+
+    h2 {
+        color: red;
+    }
+}
+
+
+
+.tarjetas {
+    background-color: rgb(230, 166, 166);
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    /*flex-wrap: initial;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tarjetas small {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 10px;
+}
+
+.card__title {
+    color: purple;
+    font-size: 25px;
+    margin-bottom: $smallsize;
+}
+
+.card__header img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: $smallsize;
+}
+
+.card__descrepcion {
+    margin-bottom: 30px;
+    font-size: $smallsize;
+}
+
+a {
+    color: brown;
 }

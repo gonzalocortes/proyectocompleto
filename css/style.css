@@ -125,84 +125,95 @@
   padding: 3px;
   border: 10px inset rgb(219, 73, 54);
 }
-.body .fondo {
+
+.fondo {
   background-image: url(../assets/fondodesesion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-.body header {
+
+header {
   font-family: Arial, Helvetica, sans-serif;
   justify-content: space-between;
 }
-.body header .nav-cuerpo {
+header .nav-cuerpo {
   justify-content: end;
   width: 100%;
 }
-.body nav a {
+
+nav a {
   color: aliceblue;
 }
-.body nav ul .negrita {
+nav ul .negrita {
   font-weight: bold;
 }
-.body nav li {
+nav li {
   display: inline-flex;
   width: 150px;
 }
-.body main p {
+
+main p {
   font-size: 18px;
 }
-.body main .inicio {
+main .inicio {
   color: red;
   background-size: cover;
   background-image: url(../assets/imagenfondo.jpeg);
   font-size: 20px;
 }
-.body main .inicio li {
+main .inicio li {
   font-style: italic;
   font-weight: bold;
   text-align: center;
 }
-.body main .interlineado {
+main .interlineado {
   line-height: 2;
 }
-.body main .orden {
+main .orden {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   transform: none;
   color: rgb(0, 0, 0);
   border-radius: 10px;
 }
-.body .estilo :hover {
+
+.estilo :hover {
   transform: translatex(50px);
   background-color: aliceblue;
 }
-.body .imagen {
+
+.imagen {
   background-image: url(../assets/fondodesesion2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-.body .delineado :hover {
+
+.delineado :hover {
   transform: translatex(50px);
   background-color: brown;
 }
-.body nav ul {
+
+nav ul {
   display: flex;
   width: 550px;
   justify-content: flex-end;
 }
-.body .action :hover {
+
+.action :hover {
   transform: translatex(50px);
   background-color: aliceblue;
 }
-.body .gusto {
+
+.gusto {
   background-image: url(../assets/gustos1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-.body .cards__tarjeta {
+
+.cards__tarjeta {
   max-width: 380px;
   display: grid;
   grid-template-columns: repeat(2, 300px);
@@ -213,13 +224,14 @@
   margin: 100px;
   margin-left: 280px;
 }
-.body .cards__tarjeta li {
+.cards__tarjeta li {
   color: oldlace;
 }
-.body .cards__tarjeta h2 {
+.cards__tarjeta h2 {
   color: red;
 }
-.body .tarjetas {
+
+.tarjetas {
   background-color: rgb(230, 166, 166);
   width: 280px;
   border-radius: 20px;
@@ -230,7 +242,8 @@
   align-items: center;
   position: relative;
 }
-.body .tarjetas small {
+
+.tarjetas small {
   background-color: rgba(255, 255, 255, 0.5);
   color: rgb(0, 0, 0);
   padding: 8px;
@@ -238,21 +251,25 @@
   right: 0;
   border-bottom-left-radius: 10px;
 }
-.body .card__title {
+
+.card__title {
   color: purple;
   font-size: 25px;
   margin-bottom: 20px;
 }
-.body .card__header img {
+
+.card__header img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.body .card__descrepcion {
+
+.card__descrepcion {
   margin-bottom: 30px;
   font-size: 20px;
 }
-.body a {
+
+a {
   color: brown;
 }
 
@@ -290,6 +307,9 @@ h1 {
 
 @media (max-width: 320px) {
   ul {
+    display: none;
+  }
+  h4 {
     display: none;
   }
   .body {
