@@ -118,104 +118,91 @@
   justify-items: start;
   font-family: fantasy;
 }
-.body main section .pinture p {
-  color: brown;
-}
-.body main .caja {
+.body main section .grid .caja {
   background-color: rgb(117, 45, 117);
   width: 20rem;
   height: 20rem;
   padding: 3px;
   border: 10px inset rgb(219, 73, 54);
 }
-
-.fondo {
+.body .fondo {
   background-image: url(../assets/fondodesesion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-
-header {
+.body header {
   font-family: Arial, Helvetica, sans-serif;
   justify-content: space-between;
 }
-header .nav-cuerpo {
+.body header .nav-cuerpo {
   justify-content: end;
   width: 100%;
 }
-
-nav a {
+.body nav a {
   color: aliceblue;
 }
-nav ul .negrita {
+.body nav ul .negrita {
   font-weight: bold;
 }
-nav li {
+.body nav li {
   display: inline-flex;
   width: 150px;
 }
-
-main p {
+.body main p {
   font-size: 18px;
 }
-main .inicio {
+.body main .inicio {
   color: red;
   background-size: cover;
   background-image: url(../assets/imagenfondo.jpeg);
   font-size: 20px;
 }
-main .inicio li {
+.body main .inicio li {
   font-style: italic;
   font-weight: bold;
   text-align: center;
 }
-main .interlineado {
+.body main .interlineado {
   line-height: 2;
 }
-main .orden {
+.body main .orden {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   transform: none;
   color: rgb(0, 0, 0);
   border-radius: 10px;
 }
-
-.estilo :hover {
+.body .estilo :hover {
   transform: translatex(50px);
   background-color: aliceblue;
 }
-
-.imagen {
+.body .imagen {
   background-image: url(../assets/fondodesesion2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-
-.delineado :hover {
+.body .delineado :hover {
   transform: translatex(50px);
   background-color: brown;
 }
-
-nav ul {
+.body nav ul {
   display: flex;
   width: 550px;
   justify-content: flex-end;
 }
-
-.action :hover {
+.body .action :hover {
   transform: translatex(50px);
   background-color: aliceblue;
 }
-
-.gusto {
+.body .gusto {
   background-image: url(../assets/gustos1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-.gusto .cards__tarjeta {
+.body .cards__tarjeta {
   max-width: 380px;
   display: grid;
   grid-template-columns: repeat(2, 300px);
@@ -226,13 +213,13 @@ nav ul {
   margin: 100px;
   margin-left: 280px;
 }
-.gusto .cards__tarjeta li {
+.body .cards__tarjeta li {
   color: oldlace;
 }
-.gusto .cards__tarjeta h2 {
+.body .cards__tarjeta h2 {
   color: red;
 }
-.gusto .tarjetas {
+.body .tarjetas {
   background-color: rgb(230, 166, 166);
   width: 280px;
   border-radius: 20px;
@@ -243,7 +230,7 @@ nav ul {
   align-items: center;
   position: relative;
 }
-.gusto .tarjetas small {
+.body .tarjetas small {
   background-color: rgba(255, 255, 255, 0.5);
   color: rgb(0, 0, 0);
   padding: 8px;
@@ -251,21 +238,21 @@ nav ul {
   right: 0;
   border-bottom-left-radius: 10px;
 }
-.gusto .card__title {
+.body .card__title {
   color: purple;
   font-size: 25px;
   margin-bottom: 20px;
 }
-.gusto .card__header img {
+.body .card__header img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.gusto .card__descrepcion {
+.body .card__descrepcion {
   margin-bottom: 30px;
   font-size: 20px;
 }
-.gusto a {
+.body a {
   color: brown;
 }
 
@@ -292,6 +279,10 @@ h1 {
   font-size: 20px;
 }
 
+.header {
+  width: 100%;
+}
+
 .cards__tarjeta {
   margin: 80px;
   margin-right: 120px;
@@ -301,15 +292,9 @@ h1 {
   ul {
     display: none;
   }
-  .orden {
-    display: grid;
-    grid-template-columns: 1fr;
-    color: crimson;
-  }
   .body {
     grid-template-columns: 1fr;
-    margin-left: 150px;
   }
 }
 
-/*# sourceMappingURL=style.css..map */
+/*# sourceMappingURL=style.css.map */
