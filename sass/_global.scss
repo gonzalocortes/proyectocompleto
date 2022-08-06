@@ -43,7 +43,8 @@ $redesSociales: (
     facebook:#2d30c9,
 );
 
-@each $nombre, $color in $redesSociales {
+@each $nombre,
+$color in $redesSociales {
     .link-#{$nombre} {
         border-radius: 10px;
         padding: 10px;

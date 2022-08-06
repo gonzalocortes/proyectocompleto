@@ -14,7 +14,11 @@
         display: none;
     }
 }
-
+ 
+.estilo :hover{
+    transition: none;
+    transform: none;
+}
 
 .body main section {
     display: flex;
@@ -35,13 +39,7 @@ h1 {
 
 
 
-
-
-
 @media (max-width: 320px) {
-
-
-
 
     .body {
         grid-template-columns: 1fr;

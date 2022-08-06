@@ -181,7 +181,7 @@ main .orden {
 }
 
 .estilo :hover {
-  transform: translatex(50px);
+  transform: skewy(10deg);
   background-color: aliceblue;
 }
 
@@ -193,7 +193,7 @@ main .orden {
 }
 
 .delineado :hover {
-  transform: translatex(50px);
+  transform: skewy(10deg);
   background-color: brown;
 }
 
@@ -204,7 +204,7 @@ nav ul {
 }
 
 .action :hover {
-  transform: translatex(50px);
+  transform: skewy(5deg);
   background-color: aliceblue;
 }
 
@@ -236,7 +236,6 @@ nav ul {
   width: 280px;
   border-radius: 20px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  /*flex-wrap: initial;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -287,6 +286,11 @@ a {
     display: none;
   }
 }
+.estilo :hover {
+  transition: none;
+  transform: none;
+}
+
 .body main section {
   display: flex;
   flex-direction: column-reverse;
