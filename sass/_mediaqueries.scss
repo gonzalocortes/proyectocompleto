@@ -1,37 +1,72 @@
 @media (max-width:1440px) {
-    h1 {
-        font-size: 20px;
-    }
-}
 
-.orden {
-    display: flex;
+    .orden {
+        display: flex;
+    }
+
+    
+
 }
 
 @media (max-width: 768px) {
 
+    .body h1 {
+        font-size: 20px;
+    }
+
+    .imagen main h1 {
+        font-size: 20px;
+    }
+
+    .fondo main h1 {
+        font-size: 20px;
+    }
+
     h3 {
         display: none;
     }
+
+    .body main section {
+        flex-direction: column-reverse
+    }
+
+    .body .contenedor-img {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .fondo main div {
+        flex-direction: column;
+        margin: 0%;
+    }
+
+    .cards__tarjeta .linea {
+        grid-template-columns: auto;
+    }
+
+    .gusto main h1 {
+        font-size: 20px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
 }
- 
-.estilo :hover{
+
+.estilo :hover {
     transition: none;
     transform: none;
 }
 
-.body main section {
-    display: flex;
-    flex-direction: column-reverse;
 
-    .ajuste-transform {
-        flex-direction: column;
-    }
+
+.ajuste-transform {
+    flex-direction: column;
 }
 
-h1 {
-    font-size: 20px;
-}
+
+
 
 .header {
     width: 100%;

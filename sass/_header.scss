@@ -13,9 +13,47 @@
     background-size: cover;
     background-attachment: fixed;
 
+    h1 {
+        font-size: 60px;
+        background-color: #14ed16c4;
+        text-align: center;
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: darkmagenta;
+        background-color: cornflowerblue;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    h3 {
+        text-align: center;
+        background-color: #d91414db;
+        border-radius: 10px;
+    }
+
+    h4 {
+        text-align: center;
+        background-color: #60b7d3cc;
+        width: fit-content;
+        font-size: 30px;
+    }
+
+    h5 {
+        background-color: #deb887ba;
+        width: fit-content;
+        color: black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
     p {
         line-height: 2;
         color: rgb(8, 11, 14);
+        background-color: #a9a3a3ab;
+        border-radius: 10px;
     }
 
     header {
@@ -62,6 +100,7 @@
                 grid-template-columns: 1fr;
                 justify-items: center;
                 align-items: center;
+                margin-bottom: 20px;
 
 
                 &__item {
@@ -76,12 +115,17 @@
 
         .caja {
             background-color: $colorcaja;
-            width: 20rem;
+            width: 18rem;
             height: 20rem;
             padding: 3px;
             border: 10px inset rgb(219, 73, 54);
+            margin-right: 15px;
         }
 
+    }
+
+    .contenedor-img {
+        display: flex;
     }
 }
 
@@ -90,7 +134,60 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    main {
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            background-color: #008b8bb8;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        h2 {
+            text-align: center;
+            background-color: #5f9ea0d4;
+            border-radius: 10px;
+        }
+
+        p {
+            background-color: #fffaf0ba;
+            color: black;
+            border-radius: 10px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+
+        .caja {
+            background-color: $colorcaja;
+            width: 18rem;
+            height: 20rem;
+            padding: 3px;
+            border: 10px inset rgb(219, 73, 54);
+            margin-right: 15px;
+            margin-bottom: 10px;
+
+        }
+    }
+
+    footer {
+        h3 {
+            font-size: 20px;
+            background-color: #deb887ba;
+            width: fit-content;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    }
 }
+
 
 header {
     font-family: Arial, Helvetica, sans-serif;
@@ -157,7 +254,7 @@ main {
 
 
 .estilo :hover {
-    transform:skewy(10deg);
+    transform: skewy(10deg);
     background-color: $shadowtext;
 }
 
@@ -167,13 +264,42 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
 
-.delineado :hover {
-    transform: skewy(10deg);
-    background-color: brown;
-}
+    main {
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            background-color: #ed143dcc;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
 
+        h3 {
+            background-color: #a58b8d;
+            border-radius: 10px;
+            width: fit-content;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .cuadro {
+            display: inline;
+            text-align: center;
+        }
+    }
+
+    .interlineado {
+        line-height: 2;
+        background-color: #fffaf0a1;
+        border-radius: 10px;
+    }
+}
 
 nav {
     ul {
@@ -185,21 +311,23 @@ nav {
 
 
 
-.action :hover {
-    transform: skewy(5deg);
-    background-color: $shadowtext;
-}
 
 .gusto {
     background-image: url(../assets/gustos1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    main {
+        h1 {
+            background-color: rgba(10, 159, 204, 0.8);
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+    }
 }
 
 .cards__tarjeta {
-    max-width: 380px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -207,13 +335,32 @@ nav {
     border-radius: $smallsize;
 
 
-    li {
-        color: oldlace;
+    ul {
+        background-color: #5f9ea0d4;
+        border-radius: 10px;
+        line-height: 2;
+
     }
 
     h2 {
         color: red;
+        text-align: center;
+        background-color: #fff8dca8;
+        border-radius: 10px;
     }
+
+    h3 {
+        background-color: #eb089599;
+        font-size: 25px;
+        width: fit-content;
+        border-radius: 10px;
+    }
+
+    .linea {
+        display: grid;
+        grid-template-columns: repeat(2, 624px);
+    }
+
 }
 
 
@@ -223,10 +370,11 @@ nav {
     width: 280px;
     border-radius: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .tarjetas small {
@@ -257,4 +405,21 @@ nav {
 
 a {
     color: brown;
+}
+
+.titulo {
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size: 30px;
+}
+
+.sunset {
+    background-image: url(../assets/contacto.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .skin {
+        background-color: #ffebcdc9;
+    }
 }

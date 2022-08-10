@@ -70,9 +70,42 @@
   background-size: cover;
   background-attachment: fixed;
 }
+.body h1 {
+  font-size: 60px;
+  background-color: rgba(20, 237, 22, 0.768627451);
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+.body h2 {
+  color: darkmagenta;
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size: 40px;
+}
+.body h3 {
+  text-align: center;
+  background-color: rgba(217, 20, 20, 0.8588235294);
+  border-radius: 10px;
+}
+.body h4 {
+  text-align: center;
+  background-color: rgba(96, 183, 211, 0.8);
+  width: fit-content;
+  font-size: 30px;
+}
+.body h5 {
+  background-color: rgba(222, 184, 135, 0.7294117647);
+  width: fit-content;
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 .body p {
   line-height: 2;
   color: rgb(8, 11, 14);
+  background-color: rgba(169, 163, 163, 0.6705882353);
+  border-radius: 10px;
 }
 .body header {
   justify-content: space-between;
@@ -110,6 +143,7 @@
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .body main section .grid__item {
   font-size: 50px;
@@ -120,10 +154,14 @@
 }
 .body main .caja {
   background-color: rgb(117, 45, 117);
-  width: 20rem;
+  width: 18rem;
   height: 20rem;
   padding: 3px;
   border: 10px inset rgb(219, 73, 54);
+  margin-right: 15px;
+}
+.body .contenedor-img {
+  display: flex;
 }
 
 .fondo {
@@ -131,6 +169,44 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+.fondo main h1 {
+  font-size: 60px;
+  text-align: center;
+  background-color: rgba(0, 139, 139, 0.7215686275);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.fondo main h2 {
+  text-align: center;
+  background-color: rgba(95, 158, 160, 0.831372549);
+  border-radius: 10px;
+}
+.fondo main p {
+  background-color: rgba(255, 250, 240, 0.7294117647);
+  color: black;
+  border-radius: 10px;
+}
+.fondo main div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.fondo main .caja {
+  background-color: rgb(117, 45, 117);
+  width: 18rem;
+  height: 20rem;
+  padding: 3px;
+  border: 10px inset rgb(219, 73, 54);
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.fondo footer h3 {
+  font-size: 20px;
+  background-color: rgba(222, 184, 135, 0.7294117647);
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 header {
@@ -191,10 +267,33 @@ main .orden {
   background-size: cover;
   background-attachment: fixed;
 }
-
-.delineado :hover {
-  transform: skewy(10deg);
-  background-color: brown;
+.imagen main h1 {
+  font-size: 60px;
+  text-align: center;
+  background-color: rgba(237, 20, 61, 0.8);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.imagen main h3 {
+  background-color: #a58b8d;
+  border-radius: 10px;
+  width: fit-content;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.imagen main div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.imagen main .cuadro {
+  display: inline;
+  text-align: center;
+}
+.imagen .interlineado {
+  line-height: 2;
+  background-color: rgba(255, 250, 240, 0.631372549);
+  border-radius: 10px;
 }
 
 nav ul {
@@ -203,32 +302,46 @@ nav ul {
   justify-content: flex-end;
 }
 
-.action :hover {
-  transform: skewy(5deg);
-  background-color: aliceblue;
-}
-
 .gusto {
   background-image: url(../assets/gustos1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
+.gusto main h1 {
+  background-color: rgba(10, 159, 204, 0.8);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
 
 .cards__tarjeta {
-  max-width: 380px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   border-radius: 20px;
 }
-.cards__tarjeta li {
-  color: oldlace;
+.cards__tarjeta ul {
+  background-color: rgba(95, 158, 160, 0.831372549);
+  border-radius: 10px;
+  line-height: 2;
 }
 .cards__tarjeta h2 {
   color: red;
+  text-align: center;
+  background-color: rgba(255, 248, 220, 0.6588235294);
+  border-radius: 10px;
+}
+.cards__tarjeta h3 {
+  background-color: rgba(235, 8, 149, 0.6);
+  font-size: 25px;
+  width: fit-content;
+  border-radius: 10px;
+}
+.cards__tarjeta .linea {
+  display: grid;
+  grid-template-columns: repeat(2, 624px);
 }
 
 .tarjetas {
@@ -236,10 +349,11 @@ nav ul {
   width: 280px;
   border-radius: 20px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .tarjetas small {
@@ -272,18 +386,59 @@ a {
   color: brown;
 }
 
-@media (max-width: 1440px) {
-  h1 {
-    font-size: 20px;
-  }
-}
-.orden {
-  display: flex;
+.titulo {
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size: 30px;
 }
 
+.sunset {
+  background-image: url(../assets/contacto.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.sunset .skin {
+  background-color: rgba(255, 235, 205, 0.7882352941);
+}
+
+@media (max-width: 1440px) {
+  .orden {
+    display: flex;
+  }
+}
 @media (max-width: 768px) {
+  .body h1 {
+    font-size: 20px;
+  }
+  .imagen main h1 {
+    font-size: 20px;
+  }
+  .fondo main h1 {
+    font-size: 20px;
+  }
   h3 {
     display: none;
+  }
+  .body main section {
+    flex-direction: column-reverse;
+  }
+  .body .contenedor-img {
+    flex-direction: column;
+    width: 100%;
+  }
+  .fondo main div {
+    flex-direction: column;
+    margin: 0%;
+  }
+  .cards__tarjeta .linea {
+    grid-template-columns: auto;
+  }
+  .gusto main h1 {
+    font-size: 20px;
+  }
+  .titulo {
+    font-size: 20px;
   }
 }
 .estilo :hover {
@@ -291,16 +446,8 @@ a {
   transform: none;
 }
 
-.body main section {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.body main section .ajuste-transform {
+.ajuste-transform {
   flex-direction: column;
-}
-
-h1 {
-  font-size: 20px;
 }
 
 .header {
