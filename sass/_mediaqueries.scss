@@ -3,9 +3,18 @@
     .orden {
         display: flex;
     }
+}
 
-    
+@media (max-width:1320px) {
+    .cards__tarjeta .linea {
+        grid-template-columns: auto;
+    }  
+}
 
+@media (max-width:934px) {
+    .body .contenedor-img {
+       display: grid;
+    }
 }
 
 @media (max-width: 768px) {
@@ -78,5 +87,9 @@
 
     .body {
         grid-template-columns: 1fr;
+    }
+
+    .ordenada {
+        padding: 22px;
     }
 }

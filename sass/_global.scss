@@ -9,6 +9,8 @@
 
 .square {
     @include estilos(space-between, yellow);
+    margin-bottom: 25px;
+    justify-content: center;
 }
 
 .mbt-init {
@@ -16,8 +18,7 @@
     padding: 10px 20px;
     margin-top: 25px;
     border-radius: 10px;
-    font-size: $smallsize;
-    color: black;
+    color: rgb(252, 248, 248);
     font-family: cursive;
     transition: $transicion;
 
@@ -39,7 +40,7 @@
 
 $redesSociales: (
     github: #1d1d1d,
-    twitter: #81d4fa,
+    twitter: #40afe2,
     facebook:#2d30c9,
 );
 

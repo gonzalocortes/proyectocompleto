@@ -5,6 +5,8 @@
   display: flex;
   justify-content: space-between;
   background-color: yellow;
+  margin-bottom: 25px;
+  justify-content: center;
 }
 
 .mbt-init, .mbt-info, .mbt-contacto {
@@ -12,8 +14,7 @@
   padding: 10px 20px;
   margin-top: 25px;
   border-radius: 10px;
-  font-size: 20px;
-  color: black;
+  color: rgb(252, 248, 248);
   font-family: cursive;
   transition: all 0.3s;
 }
@@ -44,7 +45,7 @@
   margin: 0 5px;
   color: lemonchiffon;
   text-decoration: none;
-  background-color: #81d4fa;
+  background-color: #40afe2;
 }
 
 .link-facebook {
@@ -76,23 +77,30 @@
   text-align: center;
   margin-bottom: 40px;
   border-radius: 10px;
+  padding: 20px;
 }
 .body h2 {
   color: darkmagenta;
   background-color: cornflowerblue;
   text-align: center;
   font-size: 40px;
+  padding: 20px;
+  border-radius: 10px;
 }
 .body h3 {
   text-align: center;
   background-color: rgba(217, 20, 20, 0.8588235294);
   border-radius: 10px;
+  padding: 20px;
+  color: whitesmoke;
 }
 .body h4 {
   text-align: center;
   background-color: rgba(96, 183, 211, 0.8);
   width: fit-content;
   font-size: 30px;
+  padding: 20px;
+  border-radius: 10px;
 }
 .body h5 {
   background-color: rgba(222, 184, 135, 0.7294117647);
@@ -100,12 +108,14 @@
   color: black;
   border-radius: 10px;
   margin-bottom: 20px;
+  padding: 15px;
 }
 .body p {
   line-height: 2;
-  color: rgb(8, 11, 14);
-  background-color: rgba(169, 163, 163, 0.6705882353);
+  color: #f8f9fa;
+  background-color: rgba(169, 163, 163, 0.76);
   border-radius: 10px;
+  padding: 20px;
 }
 .body header {
   justify-content: space-between;
@@ -133,6 +143,9 @@
   justify-content: center;
   align-items: center;
 }
+.body main section .grid-item-texto {
+  margin: 20px;
+}
 .body main section .container {
   background-color: antiquewhite;
 }
@@ -159,6 +172,7 @@
   padding: 3px;
   border: 10px inset rgb(219, 73, 54);
   margin-right: 15px;
+  margin-bottom: 20px;
 }
 .body .contenedor-img {
   display: flex;
@@ -176,16 +190,20 @@
   background-color: rgba(0, 139, 139, 0.7215686275);
   border-radius: 10px;
   margin-bottom: 20px;
+  padding: 20px;
 }
 .fondo main h2 {
   text-align: center;
   background-color: rgba(95, 158, 160, 0.831372549);
   border-radius: 10px;
+  padding: 20px;
+  color: black;
 }
 .fondo main p {
   background-color: rgba(255, 250, 240, 0.7294117647);
   color: black;
   border-radius: 10px;
+  padding: 20px;
 }
 .fondo main div {
   display: flex;
@@ -207,6 +225,7 @@
   width: fit-content;
   border-radius: 10px;
   margin-bottom: 20px;
+  padding: 15px;
 }
 
 header {
@@ -273,6 +292,7 @@ main .orden {
   background-color: rgba(237, 20, 61, 0.8);
   border-radius: 10px;
   margin-bottom: 20px;
+  padding: 20px;
 }
 .imagen main h3 {
   background-color: #a58b8d;
@@ -280,6 +300,8 @@ main .orden {
   width: fit-content;
   margin-bottom: 20px;
   font-size: 20px;
+  padding: 15px;
+  margin-top: 15px;
 }
 .imagen main div {
   display: flex;
@@ -292,8 +314,10 @@ main .orden {
 }
 .imagen .interlineado {
   line-height: 2;
-  background-color: rgba(255, 250, 240, 0.631372549);
+  background-color: rgba(108, 117, 125, 0.8392156863);
   border-radius: 10px;
+  padding: 20px;
+  color: aliceblue;
 }
 
 nav ul {
@@ -313,6 +337,7 @@ nav ul {
   border-radius: 10px;
   margin-bottom: 40px;
   text-align: center;
+  padding: 20px;
 }
 
 .cards__tarjeta {
@@ -323,21 +348,27 @@ nav ul {
   border-radius: 20px;
 }
 .cards__tarjeta ul {
-  background-color: rgba(95, 158, 160, 0.831372549);
+  background-color: #198754;
   border-radius: 10px;
   line-height: 2;
+  color: aliceblue;
+  padding: 40px;
 }
 .cards__tarjeta h2 {
   color: red;
   text-align: center;
-  background-color: rgba(255, 248, 220, 0.6588235294);
+  background-color: rgba(253, 13, 239, 0.7607843137);
   border-radius: 10px;
+  padding: 20px;
+  color: aliceblue;
 }
 .cards__tarjeta h3 {
-  background-color: rgba(235, 8, 149, 0.6);
+  background-color: rgba(25, 135, 84, 0.8588235294);
   font-size: 25px;
   width: fit-content;
   border-radius: 10px;
+  padding: 12px;
+  color: aliceblue;
 }
 .cards__tarjeta .linea {
   display: grid;
@@ -346,7 +377,37 @@ nav ul {
 
 .tarjetas {
   background-color: rgb(230, 166, 166);
-  width: 280px;
+  width: 264px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+  padding-top: 55px;
+}
+
+.card__item1 {
+  margin: 20px;
+}
+
+.card__description {
+  margin-top: 20px;
+}
+
+.tarjetas small {
+  background-color: rgba(13, 202, 240, 0.8901960784);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.tarjetas2 {
+  background-color: rgb(203, 85, 85);
+  width: 264px;
   border-radius: 20px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   justify-content: center;
@@ -354,10 +415,230 @@ nav ul {
   position: relative;
   margin-bottom: 20px;
   text-align: center;
+  padding: 24px;
+  padding-top: 46px;
 }
 
-.tarjetas small {
-  background-color: rgba(255, 255, 255, 0.5);
+.card__item2 {
+  margin: 4px;
+}
+
+.card__description2 {
+  margin-top: 20px;
+  color: snow;
+}
+
+.tarjetas2 small {
+  background-color: rgba(13, 202, 240, 0.8901960784);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.link2 {
+  color: snow;
+}
+
+.tarjetas3 {
+  background-color: rgba(77, 209, 103, 0.8);
+  width: 264px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 60px;
+  text-align: center;
+  padding-top: 60px;
+  color: aliceblue;
+}
+
+.card__item3 {
+  margin: 20px;
+}
+
+.tarjetas3 small {
+  background-color: rgba(13, 202, 240, 0.8901960784);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.link3 {
+  color: aliceblue;
+}
+
+.tarjetas4 {
+  background-color: rgb(205, 110, 204);
+  width: 264px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.card__item4 {
+  margin: 20px;
+}
+
+.tarjetas4 small {
+  background-color: rgba(13, 202, 240, 0.8901960784);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.tarjetas5 {
+  background-color: rgb(94, 211, 182);
+  width: 264px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.card__item5 {
+  margin: 20px;
+}
+
+.tarjetas5 small {
+  background-color: rgba(13, 202, 240, 0.8901960784);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.tarjetas6 {
+  background-color: rgb(223, 159, 98);
+  width: 264px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 70px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.card__item6 {
+  margin: 20px;
+}
+
+.tarjetas6 small {
+  background-color: rgba(13, 202, 240, 0.8901960784);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.tarjetas7 {
+  background-color: rgb(86, 107, 233);
+  width: 264px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 70px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.card__item7 {
+  margin: 20px;
+}
+
+.card__description7 {
+  color: floralwhite;
+  padding-top: 25px;
+}
+
+.tarjetas7 small {
+  background-color: rgba(13, 202, 240, 0.8901960784);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.link7 {
+  color: #600d15;
+}
+
+.tarjetas8 {
+  background-color: rgb(203, 113, 113);
+  width: 264px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.card__item8 {
+  margin: 20px;
+}
+
+.tarjetas8 small {
+  background-color: rgba(13, 202, 240, 0.8901960784);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.tarjetas9 {
+  background-color: #6c757d;
+  width: 264px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 55px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.card__item9 {
+  margin: 20px;
+}
+
+.card__description9 {
+  color: rgb(241, 241, 239);
+  padding-top: 25px;
+}
+
+.link9 {
+  color: aliceblue;
+}
+
+.tarjetas9 small {
+  background-color: rgba(13, 202, 240, 0.8901960784);
   color: rgb(0, 0, 0);
   padding: 8px;
   position: absolute;
@@ -405,6 +686,16 @@ a {
 @media (max-width: 1440px) {
   .orden {
     display: flex;
+  }
+}
+@media (max-width: 1320px) {
+  .cards__tarjeta .linea {
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 934px) {
+  .body .contenedor-img {
+    display: grid;
   }
 }
 @media (max-width: 768px) {
@@ -457,6 +748,9 @@ a {
 @media (max-width: 320px) {
   .body {
     grid-template-columns: 1fr;
+  }
+  .ordenada {
+    padding: 22px;
   }
 }
 
